@@ -1,0 +1,59 @@
+
+  .main-containers{
+    padding: 50px 250px;
+    display: block;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.4s;
+    display: flex;
+  }
+
+  .wrapper.collapse .main-containers{
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
+
+  #r1:checked ~ .main-containers{
+    margin-left: 200px;
+    transition: 0.6s;
+  }
+
+
+
+.main-containers .dashRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-containers .dashCol{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.main-containers .dashCol .dashStudent,
+.main-containers .dashCol .dashFaculty,
+.main-containers .dashCol .dashTeacher,
+.main-containers .dashCol .dashCourse{
+    height: 200px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.main-containers .dashCol .dashStudent img{
+    height: 200px;
+    width: 200px;
+    display: block;
+}
+.main-containers .dashCol .dashStudent .desc,
+.main-containers .dashCol .dashFaculty .desc,
+.main-containers .dashCol .dashTeacher .desc,
+.main-containers .dashCol .dashCourse .desc{
+    margin: 70px 10px 10px 30px;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,96 @@
+
+  .main-containerCourse{
+    padding: 50px 250px;
+    display: block;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.4s;
+    display: flex;
+  }
+
+  .wrapper.collapse .main-containerCourse{
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
+
+  #r1:checked ~ .main-containerCourse{
+    margin-left: 200px;
+    transition: 0.6s;
+  }
+
+  
+
+  #r1:checked ~ .main-containerCourse{
+    margin-left: 200px;
+    transition: 0.6s;
+  }
+
+.main-containerCourse{
+  padding: 100px 250px;
+  display: block;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.4s;
+}
+
+.main-containerCourse table{
+  left: 35%;
+  transform: translateX(10%);
+}
+#courseList{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#courseList td, #courseList th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#courseList tr:nth-child(even){background-color: #f2f2f2;}
+
+#courseList tr:hover {background-color: #ddd;}
+
+#courseList th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#courseList a{
+  text-decoration: none;
+  display: block;
+}
+
+.addCourseStd{
+  transform: translateX(10%);
+}
+
+.add-course-btn{
+  padding: 5px;
+  margin: 0px 100px 10px 105px;
+}
+
+.add-course-form{
+  border: 1px solid black;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: -20px;
+  position: relative;
+  display: none;
+}
+
+
+#times2{
+  float: right;
+}
+
+#addCourseForm{
+  width: 100%;
+  
+}
