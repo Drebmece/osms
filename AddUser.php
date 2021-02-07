@@ -11,7 +11,7 @@
     $access = $_SESSION['access'];
     $id = $_SESSION['id'];
 
-    echo $id "1";
+    echo 
     // $sqlId = "select * from student where id='$id'";
     // $sqlId = "select * from admin_list where id='$id'";
     // $sqlId = "select * from teacher where id='$id'";
