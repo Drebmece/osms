@@ -10,7 +10,7 @@
     $user = $_SESSION['user'];
     $access = $_SESSION['access'];
     $id = $_SESSION['id'];
-
+    echo $id;
     
     // $sqlId = "select * from student where id='$id'";
     // $sqlId = "select * from admin_list where id='$id'";
