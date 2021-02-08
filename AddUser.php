@@ -40,7 +40,7 @@
     }
 
     $userId = $con->query($sqlId) or die ($con->error);
-    $row = $userId->fetch_assoc();
+    $rowsId = $userId->fetch_assoc();
 
     $activateId;
     $activateStatus;
@@ -127,21 +127,21 @@
                 <label for="r1" class="fas fa-bars" id="bars"></label>
                 <label for="r2" class="fas fa-times" id="times"></label>
                 <div class="outer">
-                    <div class="logo"><img src="img/<?php echo($access == 0 ? "0admin.jpg" :  $row['profile']);?>" alt=""></div>
+                    <div class="logo"><img src="img/<?php echo($access == 0 ? "0admin.jpg" :  $rowsId['profile']);?>" alt=""></div>
 
                     <div class="myName">
                     <?php
                         if($access == 0){
                             echo "Admin";
                         }else{
-                            echo $row['first_name'];
+                            echo $rowsId['first_name'];
                         }
                     ?>
                     </div>
                     <div class="myName">
                     <?php
                     if($access != 0){
-                        echo $row['last_name'];
+                        echo $rowsId['last_name'];
                     }
                     ?>
 
