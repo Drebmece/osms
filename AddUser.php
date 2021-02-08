@@ -206,7 +206,7 @@
                       
                       if($cntUser == 0){
                         echo "<tr>";
-                            echo "<td colspan='7'>ユーザーがありません</td>"
+                            echo "<td colspan='7'>ユーザーがありません</td>";
                         echo "</tr>";
                       }else{
                       do{
