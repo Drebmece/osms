@@ -202,6 +202,12 @@
                       where u.id=ad.id and u.access_id=1";
                       $resultUser = $con->query($sqlUser) or die ($con->error);
                       $rowUser = $resultUser->fetch_assoc();
+                      $cntUser = $resultUser->num_rows;
+                      if($cntUser == 0){
+                        echo "<tr>";
+                            echo "<td colspan='7'>ユーザーがありません</td>"
+                        echo "</tr>";
+                      }else{
                       do{
                         echo "<tr>";
                         echo "<form method='post' action='AddUser.php'>";
@@ -231,6 +237,7 @@
                         echo "</tr>";
 
                       }while($rowUser = $resultUser->fetch_assoc());
+                    }
                     ?>
                 </table>
 
