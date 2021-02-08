@@ -203,6 +203,7 @@
                       $resultUser = $con->query($sqlUser) or die ($con->error);
                       $rowUser = $resultUser->fetch_assoc();
                       $cntUser = $resultUser->num_rows;
+                      echo $cntUser;
                       if($cntUser == 0){
                         echo "<tr>";
                             echo "<td colspan='7'>ユーザーがありません</td>"
